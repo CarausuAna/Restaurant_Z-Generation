@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Anamaria Cărăușu">
+    <meta name="keywords"
+        content="restaurant, Z-Generation, mâncare, Restaurant Z-Generation, mâncare diferită, petreceri">
+    <meta name="description"
+        content="Restaurantul Z-Generation are un design spectaculos și îmbină diferite bucătării, fiecare fel fiind pregătit de cei mai buni chefi care fac parte din Gen Z.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Z-Generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 13px;
+            padding: 5px;
+        }
+
+        nav li {
+            margin: 10px;
+        }
+
+        nav li a {
+            display: block;
+            white-space: nowrap;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            background: rgb(90, 138, 189);
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+
+
+        .button {
+            background-color: rgb(90, 138, 189)
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            color: white;
+            max-width: 100%;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .logo {
+            height: 80px;
+            display: flex;
+
+        }
+
+        h2 {
+            color: rgb(90, 138, 189);
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .fundal {
+            background: rgb(219, 219, 219)
+        }
+
+        .meniu {
+            background-color: white;
+        }
+
+        .meniu2 {
+            background-color: black;
+            color: white;
+        }
+
+        h4 {
+            color: rgb(90, 138, 189);
+        }
+    </style>
+</head>
+
+<body class="fundal">
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo" src="logo.jpg"
+                                alt="un telefon albastru cu o bonetă albastră și în intrior un burger și cartofi prăjiți"
+                                class="d-inline-block align-text">
+                            <h1>Restaurant Z-Generation</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="container">
+                        <button class="navbar-toggler button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#desprenoi">Despre noi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#echipa">Echipă</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#meniu">Meniu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#evenimente">Evenimente</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="carusel1.jpg" class="d-block w-100"
+                        alt="cinci farfuri cu cinci feluri de mâncare. Un fel este o tocăniță, al doilea este o porție de paste carbonara, al treilea este un ou prăjit, al patrulea o supă cremă de cartofi, iar ultimul două croissante.">
+                </div>
+                <div class="carousel-item">
+                    <img src="carusel2.jpg" class="d-block w-100"
+                        alt="interorul restaurantului cu mai multe scaune negre, cu canapele negre, iar pe masă sunt farfurii albe și pahare.">
+                </div>
+                <div class="carousel-item">
+                    <img src="carusel3.jpg" class="d-block w-100"
+                        alt="o bucătărie deschisă cu un bucătar care gătește și iese mult fum">
+                </div>
+                <div class="carousel-item">
+                    <img src="carusel4.jpg" class="d-block w-100"
+                        alt="mai multe mese pe care se află pahare de vin din sticlă transparentă și pahare negre cu servețele albe.">
+                </div>
+                <div class="carousel-item">
+                    <img src="carusel5.jpg" class="d-block w-100"
+                        alt="o masă lungă cu multe pahare transparente de vin, ornamente și scaune negre.">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <div id="desprenoi">
+        <h2>Povestea noastră</h2>
+        <p>O nouă generație, un nou concept. Gata cu discuțiile în contradictoriu și cu anxietatea creată de cine
+            comandă pentru toată masă. Un restaurant care înțelege nevoile și așteptările celor tineri, totul fiind
+            digitalizat.Cu un design spectaculos, restaurantul îmbină diferite bucătării din părți diferite ale lumii,
+            fiecare fel fiind pregătit de cei mai buni chefi care fac parte din Gen Z. Meniul săptămănii este ales chiar
+            de clienți din mai multe variante: </p>
+        <ul>
+            <li>bucătăria americană</li>
+            <li>bucătăria italiană</li>
+            <li>bucătăria mexicană</li>
+        </ul>
+        <h2>Testimoniale</h2>
+        <div class="card-group">
+            <div class="card">
+                <img src="Filip-Bianco.jpg" class="card-img-top"
+                    alt="un băiat brunet cu ochelari și barbă care se uită în zare.">
+                <div class="card-body">
+                    <h5 class="card-title">Filip Bianco</h5>
+                    <p class="card-text">Foarte aglomerat. Doar prin rezervare prinzi loc.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Acum 3 zile</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Mircea-Sipic.jpg" class="card-img-top"
+                    alt="un băiat blond cu geacă de piele care se uită încruntat la cameră.">
+                <div class="card-body">
+                    <h5 class="card-title">Mircea Sipic</h5>
+                    <p class="card-text">Un loc perfect să stai cu prietenii. Ador!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Acm 29 zile</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Tudor-Pilipic.jpg" class="card-img-top"
+                    alt="un băiat cu ochelari de soare și părul lung șaten care scoate limba.">
+                <div class="card-body">
+                    <h5 class="card-title">Tudor Pilipic</h5>
+                    <p class="card-text"> Spațiu mișto, însă nu este pentru toată lumea. Dacă vrei un loc liniștit să
+                        cinezi, nu cred
+                        că
+                        este potivit.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Acum o lună</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Alexandra-Namila.jpg" class="card-img-top"
+                    alt="o fată șatenă cu ochii albaștrii care face ci ambele mâini semne.">
+                <div class="card-body">
+                    <h5 class="card-title">Alexandra Namila</h5>
+                    <p class="card-text"> Un vibe mișto cu oameni faini. Foarte atenți la servire, iar mâncarea este
+                        spectaculoasă. O
+                        să revin cu drag.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">15 noiembrie</small>
+                </div>
+            </div>
+        </div>
+
+        <div id="echipa">
+            <h2>Echipă</h2>
+            <div class="container px-4 text-center">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h3>Bucătăria mexicană</h3>
+
+                        <img src="Monika-Calbina.jpg" class="img-thumbnail"
+                            alt="o femeie brunetă cu părul prins în coc care cu ajutorul mâinilor imită niște ochelari.">
+                        <p>Bucătar șef de tură- Monika Calbina</p>
+
+                        <img src="Mircea-Saliman.jpg" class="img-thumbnail"
+                            alt="un bărbat cu ochelari, cu părul șaten închis și cu barbă.">
+                        <p>Ajutor de bucătar- Mircea Saliman</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h3>Bucătăria italiană</h3>
+                        <img src="Emil-Stoianca(21).jpg" class="img-thumbnail"
+                            alt="un bărbat cu tricou care are părul creț și zâmbește la cameră.">
+                        <p>Bucătar șef de tură- Emil Stoianca</p>
+
+                        <img src="Asis-Peliman.jpg" class="img-thumbnail" alt="un bărbat cu ochelari de soare, șaten.">
+                        <p>Ajutor de bucătar- Asis Peliman</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h3>Bucătăria americană</h3>
+                        <img src="Anne-Felci.jpg" class="img-thumbnail"
+                            alt="o femeie cu bluza roz cu părul lung și șaten.">
+                        <p>Bucătar șef de tură- Anne Felci</p>
+
+                        <img src="Abela-Mertic.jpg" class="img-thumbnail"
+                            alt="o femeie în tricou verde cu părul șaten cu șuvițe blonde.">
+                        <p>Ajutor de bucătar- Abela Merctic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="meniu">
+            <h2>Meniu</h2>
+            <div class="container px-4 text-center ">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border meniu2">
+                            <h3>American style</h3>
+                            <h4>Burger</h4>
+
+                            <p>Veggie burger</p>
+                            <p>47ron</p>
+
+                            <p>Cheeseburger</p>
+                            <p>50ron</p>
+
+                            <p>Pulled Pork</p>
+                            <p>53ron</p>
+
+                            <h4>Main course</h4>
+
+                            <p>Fish and chips</p>
+                            <p>38ron</p>
+
+                            <p>Mac&Cheese</p>
+                            <p>40ron</p>
+
+                            <p>Crispy strips</p>
+                            <p>45ron</p>
+
+                            <h4>Desert</h4>
+
+                            <p>Banana split</p>
+                            <p>30ron</p>
+
+                            <p>American pie</p>
+                            <p>35ron</p>
+
+                            <p>American pancakes</p>
+                            <p>32ron</p>
+
+                            <p>Cookies</p>
+                            <p>23ron</p>
+                            <img src="burger.jpg" class="img-thumbnail"
+                                alt="un burger cu brânză, carne de burger, roșii, ceapă, salată și sos">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border meniu">
+                            <h3>Italian style</h3>
+                            <h4>Aperitive</h4>
+
+                            <p>Bruschete cu roșii</p>
+                            <p>20ron</p>
+
+                            <p>Bruschete cu pomodorini</p>
+                            <p>25ron</p>
+
+                            <p>Capreze</p>
+                            <p>30ron</p>
+
+                            <h4>Paste</h4>
+
+                            <p>Paste Carbonara</p>
+                            <p>45ron</p>
+
+                            <p>Paste Amatriciana</p>
+                            <p>35ron</p>
+
+                            <p>Paste cu fructe de mare</p>
+                            <p>50ron</p>
+
+                            <h4>Pizza</h4>
+
+                            <p>Pizza Margherita</p>
+                            <p>30ron</p>
+
+                            <p>Pizza Quatro-Formaggi</p>
+                            <p>35ron</p>
+
+                            <p>Pizza Pepperoni</p>
+                            <p>37ron</p>
+
+                            <p>Pizza Pollo</p>
+                            <p>36ron</p>
+                            <img src="pizza.jpg" class="img-thumbnail" alt="o pizza cu salam, ardei, cașcaval">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="p-3 border meniu2">
+
+                            <h3>Mexican style</h3>
+                            <h4>Supe</h4>
+
+                            <p>Crema de maiz</p>
+                            <p>30ron</p>
+
+                            <p>Crema de tomates</p>
+                            <p>25ron</p>
+
+                            <h4>Quesadillas</h4>
+
+                            <p>Quesadilla con pollo</p>
+                            <p>35ron</p>
+
+                            <p>Quesadilla de res </p>
+                            <p>37ron</p>
+
+                            <p>Quesadilla de venduras </p>
+                            <p>32ron</p>
+
+                            <h4>Tacos</h4>
+
+                            <p>De pollo</p>
+                            <p>40ron</p>
+
+                            <p>Venduras</p>
+                            <p>45ron</p>
+
+                            <p>De pescado</p>
+                            <p>42ron</p>
+
+                            <p>De Asadas</p>
+                            <p>40ron</p>
+
+                            <p>Vegani</p>
+                            <p>38ron</p>
+                            <img src="burrito.jpg" class="img-thumbnail"
+                                alt="un burrito cu orez, piept de pui, ardei și ceapă">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="evenimente">
+            <h2>Evenimente</h2>
+                <div class="container px-4 text-center">
+                    <div class="row gx-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="even2.jpg" class="card-img-top"
+                                    alt="un bătrân în costum cu cravata roșie, cu ochelari și căști.">
+                                <div class="card-body">
+                                    <h5 class="card-title">FEvent</h5>
+                                    <p class="card-text">Un DJ local pregătește un mix special pentru clienții
+                                        noștri pe baza recomandărilor pe care le primește chiar de la Generația
+                                        Z, dar se pot
+                                        distra și cei
+                                        din alte generații. Hai și tu la petrecere!</p>
+                                    <a href="https://www.instagram.com/" class="btn btn-dark">Cumpără bilet</a>
+                                    <span class="badge text-bg-danger">Stoc epuizat</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="even3.jpg" class="card-img-top"
+                                    alt="un copil blond cu geacă de blugi cu un semn cu două buze pe el.">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kidnight</h5>
+                                    <p class="card-text">În fiecare vineri se organizează seri și pentru cei
+                                        mici. La petrecere
+                                        vor fi animatori, dar și multe dulciuri și pizza. Vă așteptăm
+                                        în număr cât
+                                        mai mare pentru cel mai drăguț party!</p>
+                                    <a href="https://www.instagram.com/" class="btn btn-dark">Cumpără bilet</a>
+                                    <span class="badge text-bg-success">Disponbil</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="even4.jpg" class="card-img-top"
+                                    alt="un ecran de telefon care pozează mâncarea. O farfurie cu orez și pui.">
+                                <div class="card-body">
+                                    <h5 class="card-title">Photofav</h5>
+                                    <p class="card-text">În fiecare săptămână se organizează un concurs în care
+                                        cel cu cele mai
+                                        reușite poze
+                                        câștigă o masă
+                                        gratuită. Cu un telefon bun și cu puțină determinare, poți pleca sătul
+                                        de la noi.</p>
+                                    <a href="https://www.instagram.com/" class="btn btn-dark">Cumpără bilet</a>
+                                    <span class="badge text-bg-primary">Avantajos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="even5.jpg" class="card-img-top"
+                                    alt="o fată blondă cu ochelari de soare cu o pălărie în formă de rechin pe cap.">
+                                <div class="card-body">
+                                    <h5 class="card-title">Funpub</h5>
+                                    <p class="card-text">Seara costumelor hazlii! În ultimul weekend din fiecare
+                                        lună se organizează o seara în care scopul este să fii amuzant, dar și să te
+                                        distrezi. Alege
+                                        cea mai bună ținută și hai la petrecere!</p>
+                                    <a href="https://www.instagram.com/" class="btn btn-dark">Cumpără bilet</a>
+                                    <span class="badge text-bg-success">Disponbil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <footer>
+            <div class="container">
+                <a href="index.html"><img class="logo" src="logo.jpg"></a>
+                <p>Rezervările se fac printr-un mesaj pe contul de Instagram, iar noi revenim cu
+                    confirmarea și
+                    o
+                    surpriză.
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <a href="https://www.instagram.com">
+                            <img src="insta.png">
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <img src="facebook.png">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p>Luni-Vineri: 10:00-23:00</p>
+                        <p>Sâmbătă-Duminică: 14:00-3:00</p>
+                        <p>07xxxxxxxxx</p>
+                        <p>Z_generation@bahbs</p>
+                    </div>
+                </div>
+                <p>Copyright © 2023 Restaurant Z-Generation</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
